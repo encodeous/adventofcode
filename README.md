@@ -1,2 +1,2 @@
-# advent-2020
-C++ Solutions to Advent Of Code 2020 https://adventofcode.com/2020
+# Advent of Code 2020
+My C++ Solutions to Advent Of Code 2020 https://adventofcode.com/2020
