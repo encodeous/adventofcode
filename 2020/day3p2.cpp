@@ -107,7 +107,7 @@ ll find_count(int dx, int dy){
 }
 int main()
 {
-    freopen("../inputs/day3.txt","r",stdin);
+    freopen("../2020/inputs/day3.txt","r",stdin);
     for(int i = 0; i < 323; i++){
         string s;
         io > s;
