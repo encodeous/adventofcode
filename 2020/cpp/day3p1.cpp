@@ -96,7 +96,7 @@ template <typename T, typename X> using hash_map = gp_hash_table<T, X>;
 char grid[323][31];
 int main()
 {
-    freopen("../../2020/inputs/day3.txt","r",stdin);
+    freopen("../../inputs/day3.txt","r",stdin);
     for(int i = 0; i < 323; i++){
         string s;
         io > s;
