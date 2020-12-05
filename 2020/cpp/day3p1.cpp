@@ -94,20 +94,9 @@ inline ll lcm(ll a, ll b) { return a * b / gcd(a, b);}
 template <typename T, class cmp = less<T>> using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
 template <typename T, typename X> using hash_map = gp_hash_table<T, X>;
 char grid[323][31];
-ll find_count(int dx, int dy){
-    int x = -dx, y = -dy;
-    int cnt = 0;
-    while(y < 323){
-        x += dx;
-        y += dy;
-        x %= 31;
-        if(grid[y][x] == '#')cnt++;
-    }
-    return cnt;
-}
 int main()
 {
-    freopen("../2020/inputs/day3.txt","r",stdin);
+    freopen("../../2020/inputs/day3.txt","r",stdin);
     for(int i = 0; i < 323; i++){
         string s;
         io > s;
@@ -115,6 +104,14 @@ int main()
             grid[i][j] = s[j];
         }
     }
-    io < (find_count(1,1) * find_count(3, 1) * find_count(5, 1) * find_count(7, 1) * find_count(1, 2));
+    int x = -3, y = -1;
+    int cnt = 0;
+    while(y < 323){
+        x += 3;
+        y++;
+        x %= 31;
+        if(grid[y][x] == '#')cnt++;
+    }
+    io < cnt;
     return 0;
 }
